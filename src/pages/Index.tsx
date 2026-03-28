@@ -34,7 +34,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="border-hero-foreground/30 text-hero-foreground hover:bg-hero-foreground/10 font-display" asChild>
-                <a href="https://figjam.new" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVYVEbAXZddDqf6at3CLOqBghWTOCtB_jD7VFI7Ru3vK8sow/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer">
                   <Sparkles className="mr-2 w-5 h-5" /> Try FigJam Now
                 </a>
               </Button>
