@@ -60,7 +60,7 @@ const Week4 = () => {
         />
         <div className="mt-6">
           <Button variant="hero" size="lg" asChild>
-            <a href="https://padlet.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://padlet.com/aghoss/post-your-figjam-here-txqg7d1gdvisb56m" target="_blank" rel="noopener noreferrer">
               Open Shared Padlet <ExternalLink className="ml-2 w-5 h-5" />
             </a>
           </Button>
