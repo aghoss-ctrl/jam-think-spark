@@ -29,7 +29,7 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://forms.google.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVYVEbAXZddDqf6at3CLOqBghWTOCtB_jD7VFI7Ru3vK8sow/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
                   Register Here <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
