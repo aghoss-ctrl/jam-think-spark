@@ -38,10 +38,10 @@ const Week1 = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1 text-center md:text-left">
               <h3 className="text-2xl font-bold text-violet-900 mb-4 flex items-center justify-center md:justify-start gap-2">
-                <span className="text-3xl">🔍</span> Practice Zooming and Panning
+                <span className="text-3xl">🔍</span> Practice The Must Know Tools
               </h3>
               <p className="text-violet-800 text-lg mb-6">
-                To begin practicing these maneuvers, use the button to the right to enter your practice sandbox.
+                To begin practicing these maneuvers, use the button to the right to enter your practice sandbox. You will have to duplicate the FigJam. Instructions are given on the FigJam Sandbox. 
               </p>
             </div>
             
