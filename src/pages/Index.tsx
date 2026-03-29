@@ -17,7 +17,7 @@ const Index = () => {
             height={1080}
           />
         </div>
-        <div className="max-w-3xl space-y-6">
+        <div>
           <p>
              View this page to know what and why you need to register for this unique community. 
             Click the Start Here tab above for how to navigate. 
