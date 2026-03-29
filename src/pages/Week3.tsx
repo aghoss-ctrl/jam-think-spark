@@ -124,6 +124,16 @@ const Week3 = () => {
         Set visible countdowns for activities and transitions to keep the lesson on track.
       </p>
     </div>
+     <Button variant="outline" size="sm" asChild className="w-full mt-auto">
+    <a 
+      href="https://help.figma.com/hc/en-us/articles/4402269549591-Stay-on-track-with-the-timer-in-FigJam" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center justify-center gap-2"
+    >
+      Learn More <ExternalLink className="w-4 h-4" />
+    </a>
+  </Button>
   </div>
 </div>
         
