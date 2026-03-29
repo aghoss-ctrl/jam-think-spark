@@ -2,7 +2,7 @@ import { MessageCircle, Camera, Mic, ThumbsUp } from "lucide-react";
 import WeekLayout from "@/components/WeekLayout";
 import ContentSection from "@/components/ContentSection";
 import ActivityCard from "@/components/ActivityCard";
-import { Button } from "@/components/ui/button"; // Added this missing line
+import { Button } from "@/components/ui/button";
 
 const Week2 = () => {
   return (
@@ -92,6 +92,15 @@ const Week2 = () => {
             </div>
           </div>
         </div>
+      </ContentSection>
+
+      {/* Activity */}
+      <ContentSection title="This Week's Activity">
+        <ActivityCard
+          title="The Great Sandwich Debate"
+          description="Use stamps to vote on favorite classroom lunch options! This low-stakes, fun activity lets participants practice using stamps and emotes for real-time interaction. Everyone votes, everyone's voice counts."
+          stickyColor="pink"
+        />
       </ContentSection>
     </WeekLayout>
   );
