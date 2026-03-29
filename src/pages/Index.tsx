@@ -17,6 +17,12 @@ const Index = () => {
             height={1080}
           />
         </div>
+        <div className="max-w-3xl space-y-6">
+          <p className="text-xl md:text-2xl text-hero-foreground/80 max-w-2xl">
+             View this page to know what and why you need to register for this unique community. Click the start tab above for how to navigate. 
+            </p>
+        </div>
+        
         <div className="relative container py-24 md:py-36">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
