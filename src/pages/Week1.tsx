@@ -31,6 +31,34 @@ const Week1 = () => {
           ))}
         </div>
       </ContentSection>
+      <ContentSection title="Start Here">
+  <div className="bg-card rounded-xl p-8 shadow-sm border">
+    <h3 className="font-display font-bold text-lg mb-2">🔍 Practice Zooming and Panning</h3>
+    <p className="text-muted-foreground mb-4">
+      To begin practicing these maneuvers, you will need to open a FigJam account. 
+      It is a simple sign-up process using your Google account.
+    </p>
+    
+    <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+      <Button variant="outline" asChild>
+        <a href="https://www.figma.com/signup" target="_blank" rel="noopener noreferrer">
+          Sign Up for FigJam
+        </a>
+      </Button>
+      
+      <Button variant="week" asChild>
+        <a 
+          href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Practice Panning and Zooming Here
+          <ExternalLink className="ml-2 w-4 h-4" />
+        </a>
+      </Button>
+    </div>
+  </div>
+</ContentSection>
 
       {/* Video */}
       <ContentSection title="Watch & Learn" icon={<Play className="w-5 h-5" />}>
@@ -70,26 +98,7 @@ const Week1 = () => {
           stickyColor="yellow"
         />
       </ContentSection>
-      {/* Activity */}
-<ContentSection title="This Week's Activity">
-  <ActivityCard 
-    title="The Sandbox" 
-    description="Use the Marker tool to mark up an image and create a basic diagram. This is your chance to get comfortable with the core tools in a low-pressure environment. Experiment freely!" 
-    stickyColor="yellow" 
-  />
-  <div className="mt-4 flex justify-center">
-    <Button variant="week" asChild>
-      <a 
-        href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        Click this button to practice the must know tools
-        <ExternalLink className="ml-2 w-4 h-4" />
-      </a>
-    </Button>
-  </div>
-</ContentSection>
+      
     </WeekLayout>
   );
 };
