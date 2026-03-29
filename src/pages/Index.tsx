@@ -17,7 +17,7 @@ const Index = () => {
             height={1080}
           />
         </div>
-      <div className="font-bold text-purple-600 mt-[100px]">
+      <div className="font-bold text-purple-600 mt-[30px]">
         <p className="text-xl md:text-2xl text-hero-foreground/80 max-w-2xl">
      View this page to know what and why you need to register for this unique community. 
     Click the Start Here tab above for how to navigate. 
