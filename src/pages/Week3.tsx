@@ -116,21 +116,7 @@ const Week3 = () => {
     </div>
   </div>
 </div>
-        /+    <div className="grid sm:grid-cols-3 gap-4">
-          {[
-            { icon: <Eye className="w-6 h-6" />, name: "Spotlight Mode", desc: "Focus everyone's view on what you want them to see" },
-            { icon: <GitBranch className="w-6 h-6" />, name: "Follow Mode", desc: "Have students follow your cursor as you navigate" },
-            { icon: <Timer className="w-6 h-6" />, name: "Timer", desc: "Set visible countdowns for activities and transitions" },
-          ].map((feature) => (
-            <div key={feature.name} className="bg-accent/10 rounded-xl p-5 text-center">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground mb-3">
-                {feature.icon}
-              </div>
-              <h3 className="font-display font-bold">{feature.name}</h3>
-              <p className="text-xs text-muted-foreground mt-1">{feature.desc}</p>
-            </div>
-          ))}
-        </div> */
+        
       </ContentSection>
 
       {/* Activity */}
