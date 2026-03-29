@@ -18,8 +18,9 @@ const Index = () => {
           />
         </div>
         <div className="max-w-3xl space-y-6">
-          <p className="text-xl md:text-2xl text-hero-foreground/80 max-w-2xl">
-             View this page to know what and why you need to register for this unique community. Click the start tab above for how to navigate. 
+          <p>
+             View this page to know what and why you need to register for this unique community. 
+            Click the Start Here tab above for how to navigate. 
             </p>
         </div>
         
