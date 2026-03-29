@@ -31,31 +31,34 @@ const Week1 = () => {
           ))}
         </div>
       </ContentSection>
-      <ContentSection title="Start Here">
-  <div className="bg-card rounded-xl p-8 shadow-sm border">
-    <h3 className="font-display font-bold text-lg mb-2">🔍 Practice Zooming and Panning</h3>
-    <p className="text-muted-foreground mb-4">
-      To begin practicing these maneuvers, you will need to open a FigJam account. 
-      It is a simple sign-up process using your Google account.
-    </p>
-    
-    <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-      <Button variant="outline" asChild>
-        <a href="https://www.figma.com/signup" target="_blank" rel="noopener noreferrer">
-          Sign Up for FigJam
-        </a>
-      </Button>
+      {/* Must Know Tools Practice Section */}
+<ContentSection title="Must Know Tools">
+  <div className="bg-violet-50 border-2 border-violet-200 rounded-xl p-8 shadow-sm">
+    <div className="flex flex-col md:flex-row items-center gap-8">
+      <div className="flex-1 text-center md:text-left">
+        <h3 className="text-2xl font-bold text-violet-900 mb-4 flex items-center justify-center md:justify-start gap-2">
+          <span className="text-3xl">🔍</span> Practice Zooming and Panning
+        </h3>
+        <p className="text-violet-800 text-lg mb-6">
+          To begin practicing these maneuvers, use the button to the right to enter your practice sandbox.
+        </p>
+      </div>
       
-      <Button variant="week" asChild>
-        <a 
-          href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4" 
-          target="_blank" 
-          rel="noopener noreferrer"
+      <div className="flex-shrink-0">
+        <Button 
+          variant="default" 
+          asChild 
+          className="bg-violet-600 hover:bg-violet-700 text-white px-8 py-6 text-xl rounded-full shadow-lg hover:scale-105 transition-all"
         >
-          Practice Panning and Zooming Here
-          <ExternalLink className="ml-2 w-4 h-4" />
-        </a>
-      </Button>
+          <a 
+            href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Practice the Must Know Tools
+          </a>
+        </Button>
+      </div>
     </div>
   </div>
 </ContentSection>
