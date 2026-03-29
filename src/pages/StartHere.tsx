@@ -38,6 +38,13 @@ const StartHere = () => {
              
             </div>
           </div>
+           <div style="margin-top: 30px; padding: 20px; border: 2px solid purple; border-radius: 8px; background-color: #fdfaff;">
+    <h3 style="color: purple; font-weight: bold; margin-top: 0;">🚀 Practice Zooming and Panning</h3>
+    <p>To begin practicing these maneuvers, you will need to open a <strong>FigJam account</strong>. It is a simple sign-up process using your <strong>Google account</strong>.</p>
+    <a href="https://www.figma.com/figjam/" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: purple; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        Sign Up for FigJam
+    </a>
+</div>
         </ContentSection>
 
         {/* Tech Requirements */}
