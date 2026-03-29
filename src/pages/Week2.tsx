@@ -70,8 +70,8 @@ const Week2 = () => {
                 <span className="text-3xl">🗣️</span> Practice Student Voice Tools
               </h3>
               <p className="text-violet-800 text-lg mb-6">
-                Ready to try out Stamps, Emotes, and Widgets? Use the button to the right to enter your Week 2 practice sandbox. 
-                Remember to duplicate the board to your own account to start editing!
+                Ready to try out Stamps, Emotes, and Widgets? Use the button to the right to enter your Week 2 practice FigJam. 
+                Remember we are live!
               </p>
             </div>
             
