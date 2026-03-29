@@ -23,8 +23,8 @@ const Index = () => {
     Click the Start Here tab above for how to navigate. 
         </p>
     </div>
-        
-        <div className="relative container py-24 md:py-36">
+        <div className="relative container pb-24 pt-0 md:pb-36 md:pt-10">
+       
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Ditch the Slide Deck.{" "}
