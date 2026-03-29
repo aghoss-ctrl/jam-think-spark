@@ -1,3 +1,6 @@
+import { GitBranch, Eye, Timer, LayoutList, ExternalLink } from "lucide-react";
+// ... other imports
+import { Button } from "@/components/ui/button";
 import { GitBranch, Eye, Timer, LayoutList } from "lucide-react";
 import WeekLayout from "@/components/WeekLayout";
 import ContentSection from "@/components/ContentSection";
@@ -14,6 +17,25 @@ const Week3 = () => {
       {/* Structure Tools */}
       <ContentSection title="Organization Tools" icon={<LayoutList className="w-5 h-5" />}>
         <div className="grid sm:grid-cols-2 gap-6">
+          <div className="bg-card rounded-xl p-6 shadow-sm border flex flex-col justify-between">
+  <div>
+    <span className="text-2xl">📦</span>
+    <h3 className="font-display font-bold text-lg mt-2">Sections</h3>
+    <p className="text-sm text-muted-foreground mt-2 mb-4">
+      Create dedicated workspaces for individuals or groups. Keep the board organized and give students clear boundaries for their work.
+    </p>
+  </div>
+  <Button variant="outline" size="sm" asChild className="w-full mt-auto">
+    <a 
+      href="https://help.figma.com/hc/en-us/articles/9771500257687-Organize-your-canvas-with-sections" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center justify-center gap-2"
+    >
+      Learn More <ExternalLink className="w-4 h-4" />
+    </a>
+  </Button>
+</div>
           <div className="bg-card rounded-xl p-6 shadow-sm border">
             <span className="text-2xl">📦</span>
             <h3 className="font-display font-bold text-lg mt-2">Sections</h3>
