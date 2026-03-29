@@ -70,6 +70,26 @@ const Week1 = () => {
           stickyColor="yellow"
         />
       </ContentSection>
+      {/* Activity */}
+<ContentSection title="This Week's Activity">
+  <ActivityCard 
+    title="The Sandbox" 
+    description="Use the Marker tool to mark up an image and create a basic diagram. This is your chance to get comfortable with the core tools in a low-pressure environment. Experiment freely!" 
+    stickyColor="yellow" 
+  />
+  <div className="mt-4 flex justify-center">
+    <Button variant="week" asChild>
+      <a 
+        href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Click this button to practice the must know tools
+        <ExternalLink className="ml-2 w-4 h-4" />
+      </a>
+    </Button>
+  </div>
+</ContentSection>
     </WeekLayout>
   );
 };
