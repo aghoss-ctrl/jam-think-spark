@@ -30,8 +30,7 @@ const Week1 = () => {
             </div>
           ))}
         </div>
-        </ContentSection>
-       </ContentSection>
+      </ContentSection>  {/* ✅ Fix 1: removed duplicate closing tag */}
 
       {/* Activity */}
       <ContentSection title="This Week's Activity">
@@ -42,7 +41,7 @@ const Week1 = () => {
         />
       </ContentSection>
 
-    {/* Must Know Tools Practice Section */}
+      {/* Must Know Tools Practice Section */}
       <ContentSection title="Must Know Tools">
         <div className="bg-violet-50 border-2 border-violet-200 rounded-xl p-8 shadow-sm">
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -51,19 +50,19 @@ const Week1 = () => {
                 <span className="text-3xl">🔍</span> Practice The Must Know Tools
               </h3>
               <p className="text-violet-800 text-lg mb-6">
-                To begin practicing these maneuvers, use the button to the right to enter your practice sandbox. You will have to duplicate the FigJam. Instructions are given on the FigJam Sandbox. 
+                To begin practicing these maneuvers, use the button to the right to enter your practice sandbox. You will have to duplicate the FigJam. Instructions are given on the FigJam Sandbox.
               </p>
             </div>
-            
+
             <div className="flex-shrink-0">
-              <Button 
-                variant="default" 
-                asChild 
+              <Button
+                variant="default"
+                asChild
                 className="bg-violet-600 hover:bg-violet-700 text-white px-8 py-6 text-xl rounded-full shadow-lg hover:scale-105 transition-all"
               >
-                <a 
-                  href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4" 
-                  target="_blank" 
+                
+                  href="https://www.figma.com/board/64SRA0wbOiMNfWEPByZsL7/Week-1-FigJam-Foundations?node-id=7-1140&t=G5kf5PHjys262GHh-4"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   Practice the Must Know Tools
@@ -102,9 +101,9 @@ const Week1 = () => {
             </a>
           </Button>
         </div>
-     
-      
-    </WeekLayout>
+      </ContentSection>  {/* ✅ Fix 2: added missing closing tag */}
+
+    </WeekLayout>  {/* ✅ Fix 3: added missing closing tag */}
   );
 };
 
