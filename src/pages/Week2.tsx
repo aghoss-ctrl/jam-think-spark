@@ -10,6 +10,7 @@ const Week2 = () => {
       weekNumber={2}
       title="The Power of Student Voice"
       focus="Using Stamps, Emotes, and Stickies to capture real-time feedback and affirm student ideas."
+      Week 2 is a live session in FigJam. We will all be editing the FigJam simultaneously. 
       accentClass="bg-week-2"
     >
       {/* Voice Tools */}
