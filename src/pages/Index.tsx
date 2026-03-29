@@ -23,7 +23,6 @@ const Index = () => {
     Click the Start Here tab above for how to navigate. 
         </p>
     </div>
-    </div>
         
         <div className="relative container py-24 md:py-36">
           <div className="max-w-3xl space-y-6">
