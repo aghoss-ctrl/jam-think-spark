@@ -9,8 +9,7 @@ const Week2 = () => {
     <WeekLayout
       weekNumber={2}
       title="The Power of Student Voice"
-      focus="Using Stamps, Emotes, and Stickies to capture real-time feedback and affirm student ideas."
-      Week 2 is a live session in FigJam. We will all be editing the FigJam simultaneously. 
+      focus="Using Stamps, Emotes, and Stickies to capture real-time feedback and affirm student ideas. Week 2 is a live session in FigJam—we will all be editing the board simultaneously."
       accentClass="bg-week-2"
     >
       {/* Voice Tools */}
@@ -94,8 +93,6 @@ const Week2 = () => {
           </div>
         </div>
       </ContentSection>
-
-     
     </WeekLayout>
   );
 };
