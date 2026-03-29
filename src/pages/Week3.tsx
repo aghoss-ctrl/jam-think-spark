@@ -1,4 +1,6 @@
 import { GitBranch, Eye, Timer, LayoutList, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GitBranch, Eye, Timer, LayoutList, ExternalLink } from "lucide-react";
 // ... other imports
 import { Button } from "@/components/ui/button";
 import { GitBranch, Eye, Timer, LayoutList } from "lucide-react";
@@ -36,22 +38,26 @@ const Week3 = () => {
     </a>
   </Button>
 </div>
-          <div className="bg-card rounded-xl p-6 shadow-sm border">
-            <span className="text-2xl">📦</span>
-            <h3 className="font-display font-bold text-lg mt-2">Sections</h3>
-            <p className="text-sm text-muted-foreground mt-2">
-              Create dedicated workspaces for individuals or groups. Keep the board organized
-              and give students clear boundaries for their work.
-            </p>
-          </div>
-          <div className="bg-card rounded-xl p-6 shadow-sm border">
-            <span className="text-2xl">🔗</span>
-            <h3 className="font-display font-bold text-lg mt-2">Connectors</h3>
-            <p className="text-sm text-muted-foreground mt-2">
-              Draw arrows and lines between elements to show relationships, flow, and
-              sequence in diagrams and lesson plans.
-            </p>
-          </div>
+         <div className="bg-card rounded-xl p-6 shadow-sm border flex flex-col justify-between">
+  <div>
+    <span className="text-2xl">🔗</span>
+    <h3 className="font-display font-bold text-lg mt-2">Connectors</h3>
+    <p className="text-sm text-muted-foreground mt-2 mb-4">
+      Map out flows and show relationships between ideas. Use lines and arrows to create clear, easy-to-follow diagrams and processes.
+    </p>
+  </div>
+  <Button variant="outline" size="sm" asChild className="w-full mt-auto">
+    <a 
+      href="https://help.figma.com/hc/en-us/articles/1500004414542-Create-diagrams-and-flows-with-connectors-in-FigJam" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="flex items-center justify-center gap-2"
+    >
+      Learn More <ExternalLink className="w-4 h-4" />
+    </a>
+  </Button>
+</div>
+         
         </div>
       </ContentSection>
 
