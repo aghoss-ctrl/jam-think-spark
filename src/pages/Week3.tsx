@@ -98,9 +98,19 @@ const Week3 = () => {
       </div>
       <h3 className="font-display font-bold text-lg">Follow Mode</h3>
       <p className="text-xs text-muted-foreground mt-2 mb-4">
-        Have students follow your cursor as you navigate through different parts of the board.
+        Have students follow your cursor as you navigate through different parts of the board. This is initiated by Spotlight. Read the lower have of the Spotlight page. 
       </p>
     </div>
+    <Button variant="outline" size="xs" asChild className="w-full mt-auto text-[10px] h-8">
+      <a 
+        href="https://help.figma.com/hc/en-us/articles/5025214483351-Facilitate-meetings-with-spotlight" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="flex items-center justify-center gap-1"
+      >
+        Learn More <ExternalLink className="w-3 h-3" />
+      </a>
+    </Button>
   </div>
 
   {/* Timer Card */}
