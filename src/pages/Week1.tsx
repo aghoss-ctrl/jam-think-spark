@@ -30,8 +30,7 @@ const Week1 = () => {
             </div>
           ))}
         </div>
-      </ContentSection>
-      {/* Must Know Tools Practice Section */}
+     {/* Must Know Tools Practice Section */}
 <ContentSection title="Must Know Tools">
   <div className="bg-violet-50 border-2 border-violet-200 rounded-xl p-8 shadow-sm">
     <div className="flex flex-col md:flex-row items-center gap-8">
