@@ -94,14 +94,7 @@ const Week2 = () => {
         </div>
       </ContentSection>
 
-      {/* Activity */}
-      <ContentSection title="This Week's Activity">
-        <ActivityCard
-          title="The Great Sandwich Debate"
-          description="Use stamps to vote on favorite classroom lunch options! This low-stakes, fun activity lets participants practice using stamps and emotes for real-time interaction. Everyone votes, everyone's voice counts."
-          stickyColor="pink"
-        />
-      </ContentSection>
+     
     </WeekLayout>
   );
 };
