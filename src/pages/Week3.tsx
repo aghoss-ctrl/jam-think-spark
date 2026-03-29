@@ -1,6 +1,8 @@
 import { GitBranch, Eye, Timer, LayoutList, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { GitBranch, Eye, Timer, LayoutList, ExternalLink } from "lucide-react";
+import { GitBranch, Eye, Timer, LayoutList, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 // ... other imports
 import { Button } from "@/components/ui/button";
 import { GitBranch, Eye, Timer, LayoutList } from "lucide-react";
@@ -63,7 +65,58 @@ const Week3 = () => {
 
       {/* Classroom Management */}
       <ContentSection title="Classroom Management Features" icon={<Eye className="w-5 h-5" />}>
+    
         <div className="grid sm:grid-cols-3 gap-4">
+  {/* Spotlight Card */}
+  <div className="bg-accent/10 rounded-xl p-5 text-center flex flex-col justify-between border border-transparent hover:border-accent/20 transition-all">
+    <div>
+      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground mb-3">
+        <Eye className="w-6 h-6" />
+      </div>
+      <h3 className="font-display font-bold text-lg">Spotlight Mode</h3>
+      <p className="text-xs text-muted-foreground mt-2 mb-4">
+        Focus everyone's view on what you want them to see. When you spotlight yourself, everyone follows your view.
+      </p>
+    </div>
+    <Button variant="outline" size="xs" asChild className="w-full mt-auto text-[10px] h-8">
+      <a 
+        href="https://help.figma.com/hc/en-us/articles/5025214483351-Facilitate-meetings-with-spotlight" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="flex items-center justify-center gap-1"
+      >
+        Learn More <ExternalLink className="w-3 h-3" />
+      </a>
+    </Button>
+  </div>
+
+  {/* Follow Mode Card */}
+  <div className="bg-accent/10 rounded-xl p-5 text-center flex flex-col justify-between border border-transparent hover:border-accent/20 transition-all">
+    <div>
+      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground mb-3">
+        <GitBranch className="w-6 h-6" />
+      </div>
+      <h3 className="font-display font-bold text-lg">Follow Mode</h3>
+      <p className="text-xs text-muted-foreground mt-2 mb-4">
+        Have students follow your cursor as you navigate through different parts of the board.
+      </p>
+    </div>
+  </div>
+
+  {/* Timer Card */}
+  <div className="bg-accent/10 rounded-xl p-5 text-center flex flex-col justify-between border border-transparent hover:border-accent/20 transition-all">
+    <div>
+      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent text-accent-foreground mb-3">
+        <Timer className="w-6 h-6" />
+      </div>
+      <h3 className="font-display font-bold text-lg">Timer</h3>
+      <p className="text-xs text-muted-foreground mt-2 mb-4">
+        Set visible countdowns for activities and transitions to keep the lesson on track.
+      </p>
+    </div>
+  </div>
+</div>
+        /+    <div className="grid sm:grid-cols-3 gap-4">
           {[
             { icon: <Eye className="w-6 h-6" />, name: "Spotlight Mode", desc: "Focus everyone's view on what you want them to see" },
             { icon: <GitBranch className="w-6 h-6" />, name: "Follow Mode", desc: "Have students follow your cursor as you navigate" },
@@ -77,7 +130,7 @@ const Week3 = () => {
               <p className="text-xs text-muted-foreground mt-1">{feature.desc}</p>
             </div>
           ))}
-        </div>
+        </div> */
       </ContentSection>
 
       {/* Activity */}
