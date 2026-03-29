@@ -65,14 +65,7 @@ const Week1 = () => {
         </div>
       </ContentSection>
 
-      {/* This Week's Activity */}
-      <ContentSection title="This Week's Activity">
-        <ActivityCard
-          title="The Sandbox"
-          description="Use the Marker tool to mark up an image and create a basic diagram. This is your chance to get comfortable with the core tools in a low-pressure environment. Experiment freely!"
-          stickyColor="yellow"
-        />
-      </ContentSection>
+     
 
       {/* Video */}
       <ContentSection title="Watch & Learn" icon={<Play className="w-5 h-5" />}>
