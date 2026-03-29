@@ -31,6 +31,16 @@ const Week1 = () => {
           ))}
         </div>
         </ContentSection>
+       </ContentSection>
+
+      {/* Activity */}
+      <ContentSection title="This Week's Activity">
+        <ActivityCard
+          title="The Sandbox"
+          description="Use the Marker tool to mark up an image and create a basic diagram. This is your chance to get comfortable with the core tools in a low-pressure environment. Experiment freely!"
+          stickyColor="yellow"
+        />
+      </ContentSection>
 
     {/* Must Know Tools Practice Section */}
       <ContentSection title="Must Know Tools">
@@ -92,16 +102,7 @@ const Week1 = () => {
             </a>
           </Button>
         </div>
-      </ContentSection>
-
-      {/* Activity */}
-      <ContentSection title="This Week's Activity">
-        <ActivityCard
-          title="The Sandbox"
-          description="Use the Marker tool to mark up an image and create a basic diagram. This is your chance to get comfortable with the core tools in a low-pressure environment. Experiment freely!"
-          stickyColor="yellow"
-        />
-      </ContentSection>
+     
       
     </WeekLayout>
   );
