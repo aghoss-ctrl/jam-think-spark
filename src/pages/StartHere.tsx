@@ -44,14 +44,24 @@ const StartHere = () => {
     To begin practicing these maneuvers, you will need to open a <strong>FigJam account</strong>. 
     It is a simple sign-up process using your <strong>Google account</strong>.
   </p>
-  <a 
-    href="https://www.figma.com/figjam/" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="inline-block px-5 py-2.5 bg-purple-600 text-white no-underline rounded-md font-bold mt-4"
-  >
-    Sign Up for FigJam
-  </a>
+  <div className="flex flex-wrap gap-4 mt-4">
+    <a 
+      href="https://www.figma.com/figjam/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="inline-block px-5 py-2.5 bg-purple-600 text-white no-underline rounded-md font-bold"
+    >
+      Sign Up for FigJam
+    </a>
+    <a 
+      href="https://www.figma.com/board/KCGaRyQlfgjajs0lN32kvS/FigJam-Basics?node-id=4-2693&t=clv8rC8tfk9EFbHE-1" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="inline-block px-5 py-2.5 bg-purple-600 text-white no-underline rounded-md font-bold"
+    >
+      Practice Panning and Zooming Here
+    </a>
+  </div>
 </div>
         </ContentSection>
 
