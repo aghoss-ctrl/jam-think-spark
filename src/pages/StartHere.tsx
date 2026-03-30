@@ -27,12 +27,11 @@ const Index = () => {
               streamline lesson design, and spark student engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-              <Button size="lg" className="rounded-full px-8 h-12 text-base" asChild>
-                <Link to="/week/1">Start Learning <ArrowRight className="ml-2 w-4 h-4" /></Link>
-              </Button>
-              <Button variant="outline" asChild className="rounded-full px-8 h-12 text-base">
-  <Link to="/curriculum">View Curriculum</Link>
-</Button>
+              <div className="flex justify-center mt-8">
+  <Button size="lg" variant="outline" asChild className="rounded-full px-8 h-12 text-base bg-white/50 backdrop-blur-sm">
+    <Link to="/curriculum">View Curriculum</Link>
+  </Button>
+</div>
             </div>
           </div>
         </div>
