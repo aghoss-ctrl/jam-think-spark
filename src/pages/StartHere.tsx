@@ -1,12 +1,42 @@
-import { Monitor, Smartphone, MapPin, User } from "lucide-react";
-import ContentSection from "@/components/ContentSection";
+import { Users, Zap, Shield, ArrowRight, MessageSquare, Globe, Laptop, Heart } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
-const StartHere = () => {
+const Index = () => {
   return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <section className="bg-secondary py-20">
-{/* Community Introduction Section */}
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="relative py-20 lg:py-32 overflow-hidden bg-hero">
+        <div className="container relative z-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-in">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              Now Live: Spring 2026 Cohort
+            </div>
+            <h1 className="text-5xl lg:text-7xl font-display font-bold tracking-tight text-hero-foreground mb-6 animate-slide-up">
+              Think & Spark <br />
+              <span className="text-primary">with FigJam</span>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl animate-slide-up" style={{ animationDelay: "0.1s" }}>
+              A professional learning network for educators to master visual collaboration, 
+              streamline lesson design, and spark student engagement.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              <Button size="lg" className="rounded-full px-8 h-12 text-base" asChild>
+                <Link to="/week/1">Start Learning <ArrowRight className="ml-2 w-4 h-4" /></Link>
+              </Button>
+              <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base bg-white/50 backdrop-blur-sm">
+                View Curriculum
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Introduction Section */}
       <section className="py-12 bg-violet-50 border-b-4 border-violet-100">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-background rounded-3xl p-8 md:p-12 shadow-xl border-2 border-violet-200">
@@ -19,7 +49,7 @@ const StartHere = () => {
                   Meet the Network
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  To help us grow as a professional learning community, please introduce yourself to the network! Use the Padlet below to share your name, your current role, and one specific goal you have for using visual collaboration.
+                  To help us grow as a professional learning community, please introduce yourself to the network! Use the Padlet below to share your name, your role, and one specific goal for visual collaboration.
                 </p>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -60,113 +90,109 @@ const StartHere = () => {
           </div>
         </div>
       </section>
-        
+
+      {/* PLN Framework Section */}
+      <section className="py-20 bg-card/50 border-y">
         <div className="container">
-          <span className="inline-block px-4 py-1 rounded-full bg-card/20 text-secondary-foreground font-display text-sm font-semibold mb-4">
-            Start Here
-          </span>
-          <h1 className="text-4xl md:text-6xl font-bold text-secondary-foreground mb-4">
-            The Navigator
-          </h1>
-          <p className="text-xl text-secondary-foreground/80 max-w-2xl">
-            Everything you need to know before diving into FigJam.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">The Framework of our PLN</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-sticky-yellow/20 rounded-2xl flex items-center justify-center text-3xl">🧠</div>
+              <h3 className="text-xl font-bold text-foreground">Adult Learning Theory (ALT)</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                This PLN utilizes the <strong>Self-Concept</strong> principle. Adult learners benefit from having control over their learning process, so we provide autonomous "Sandbox" zones for self-paced exploration (Knowles, 1980).
+              </p>
+            </div>
+
+            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-sticky-green/20 rounded-2xl flex items-center justify-center text-3xl">🎨</div>
+              <h3 className="text-xl font-bold text-foreground">Universal Design for Learning (UDL)</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                We provide <strong>Multiple Means of Representation</strong>. Information is provided through video tutorials, written guides, and interactive board examples to meet diverse learner needs (CAST, 2018).
+              </p>
+            </div>
+
+            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-sticky-blue/20 rounded-2xl flex items-center justify-center text-3xl">🤝</div>
+              <h3 className="text-xl font-bold text-foreground">Participation Expectations</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                To get the most out of this network, participants are expected to engage with at least one peer post per week and complete the hands-on activity in the FigJam board.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-     
-
-      <div className="container py-16 space-y-16">
-        {/* Navigation Guide */}
-        <ContentSection title="Navigating FigJam" icon={<MapPin className="w-5 h-5" />}>
-          <div className="bg-card rounded-xl p-8 shadow-sm border">
-            <p className="text-lg leading-relaxed mb-6">
-              FigJam navigation works just like <strong>Google Maps</strong>:
+      {/* Features Section */}
+      <section className="py-24">
+        <div className="container">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Real Collaboration, Instant Engagement</h2>
+            <p className="text-muted-foreground text-lg">
+              Move beyond static presentations. Create active, collaborative learning experiences 
+              where every student has a seat at the table.
             </p>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-sticky-yellow/30 rounded-lg p-6">
-                <h3 className="font-display font-bold text-lg mb-2">🔍 Zoom</h3>
-                <p className="text-muted-foreground">Pinch to zoom in and out on the canvas, just like zooming into a map.</p>
-              </div>
-              <div className="bg-sticky-blue/30 rounded-lg p-6">
-                <h3 className="font-display font-bold text-lg mb-2">🖐️ Pan</h3>
-                <p className="text-muted-foreground">Two-finger swipe (or click and drag on the background) to move around the board.</p>
-              </div>
-             
-            </div>
           </div>
-         <div className="mt-[30px] p-5 border-2 border-purple-600 rounded-lg bg-[#fdfaff]">
-  <h3 className="text-purple-600 font-bold mt-0">🚀 Practice Zooming and Panning</h3>
-  <p>
-    To begin practicing these maneuvers, you will need to open a <strong>FigJam account</strong>. 
-    It is a simple sign-up process using your <strong>Google account</strong>.
-  </p>
-  <div className="flex flex-wrap gap-4 mt-4">
-    <a 
-      href="https://www.figma.com/figjam/" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="inline-block px-5 py-2.5 bg-purple-600 text-white no-underline rounded-md font-bold"
-    >
-      Sign Up for FigJam
-    </a>
-    <a 
-      href="https://www.figma.com/board/KCGaRyQlfgjajs0lN32kvS/FigJam-Basics?node-id=4-2693&t=clv8rC8tfk9EFbHE-1" 
-      target="_blank" 
-      rel="noopener noreferrer" 
-      className="inline-block px-5 py-2.5 bg-purple-600 text-white no-underline rounded-md font-bold"
-    >
-      Practice Panning and Zooming Here
-    </a>
-  </div>
-</div>
-        </ContentSection>
-
-        {/* Tech Requirements */}
-        <ContentSection title="Tech Requirements" icon={<Monitor className="w-5 h-5" />}>
-          <div className="bg-card rounded-xl p-8 shadow-sm border">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="font-display font-bold text-lg mb-4 text-secondary">✅ Supported Devices</h3>
-                <ul className="space-y-3">
-                  {["Chromebooks", "Laptops / Desktops", "iPads & Tablets"].map((d) => (
-                    <li key={d} className="flex items-center gap-3">
-                      <span className="w-2 h-2 rounded-full bg-secondary" />
-                      {d}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-display font-bold text-lg mb-4 text-destructive">⚠️ Not Supported</h3>
-                <div className="flex items-center gap-3 text-muted-foreground">
-                  <Smartphone className="w-5 h-5" />
-                  <span>Mobile phones are not supported for these activities</span>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: <Users className="w-6 h-6" />, title: "Inclusive Participation", description: "Tools like stamps and emotes give every student a voice, regardless of confidence level." },
+              { icon: <Zap className="w-6 h-6" />, title: "Real-time Feedback", description: "See student thinking as it happens and provide instant support and redirection." },
+              { icon: <Shield className="w-6 h-6" />, title: "Classroom Ready", description: "Designed for education with features that keep the board organized and students on track." },
+            ].map((feature, i) => (
+              <div key={i} className="p-8 rounded-2xl bg-card border shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                  {feature.icon}
                 </div>
+                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {feature.description}
+                </p>
               </div>
-            </div>
+            ))}
           </div>
-        </ContentSection>
+        </div>
+      </section>
 
-        {/* Guide Bio */}
-        <ContentSection title="Your Guide" icon={<User className="w-5 h-5" />}>
-          <div className="bg-card rounded-xl p-8 shadow-sm border">
-            <div className="max-w-2xl">
-              <p className="text-lg leading-relaxed mb-6">
-                Welcome! I believe in a <strong className="marker-underline">phased approach</strong> to learning
-                new tools — we'll start small with the basics and gradually work our way up to full
-                whole-class collaboration by Week 4.
-              </p>
-              <p className="text-muted-foreground">
-                Each week is designed to build confidence before adding complexity. No one gets
-                left behind, and every educator moves at a pace that works for their classroom.
-              </p>
-            </div>
+      {/* Week Navigation */}
+      <section className="py-24 bg-secondary/30">
+        <div className="container">
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-4">Your 4-Week Journey</h2>
+            <p className="text-muted-foreground">Master FigJam step-by-step through our structured curriculum.</p>
           </div>
-        </ContentSection>
-      </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { num: 1, title: "Foundations", desc: "Master the basic toolset", color: "bg-week-1" },
+              { num: 2, title: "Student Voice", desc: "Capture real-time feedback", color: "bg-week-2" },
+              { num: 3, title: "Facilitation", desc: "Manage the digital classroom", color: "bg-week-3" },
+              { num: 4, title: "Lesson Design", desc: "Build your first major board", color: "bg-week-4" },
+            ].map((week) => (
+              <Link 
+                key={week.num} 
+                to={`/week/${week.num}`}
+                className="group relative p-8 rounded-2xl bg-background border shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+              >
+                <div className={`absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 rounded-full opacity-10 transition-transform group-hover:scale-110 ${week.color}`}></div>
+                <span className="text-sm font-bold text-primary mb-2 block">Week {week.num}</span>
+                <h3 className="text-xl font-bold mb-2">{week.title}</h3>
+                <p className="text-sm text-muted-foreground">{week.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Start CTA */}
+      <section className="py-16 bg-hero text-hero-foreground">
+        <div className="container text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to Spark Engagement?</h2>
+          <Button size="lg" className="rounded-full px-12 h-14 text-lg bg-white text-primary hover:bg-white/90 shadow-xl" asChild>
+            <Link to="/week/1">Enter the Hub</Link>
+          </Button>
+        </div>
+      </section>
     </div>
   );
 };
 
-export default StartHere;
+export default Index;
