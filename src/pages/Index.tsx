@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+fimport { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Users, Lightbulb, Palette } from "lucide-react";
 import heroImage from "@/assets/hero-whiteboard.jpg";
@@ -37,7 +37,7 @@ const Index = () => {
             <div className="flex flex-wrap gap-4 pt-4">
               <Button variant="hero" size="lg" asChild>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVYVEbAXZddDqf6at3CLOqBghWTOCtB_jD7VFI7Ru3vK8sow/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-                  Register Here <className="ml-2 w-5 h-5" />
+                  Register Here
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="border-hero-foreground/30 text-hero-foreground hover:bg-hero-foreground/10 font-display" asChild>
