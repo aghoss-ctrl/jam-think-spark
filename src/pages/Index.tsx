@@ -1,4 +1,4 @@
-fimport { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Users, Lightbulb, Palette } from "lucide-react";
 import heroImage from "@/assets/hero-whiteboard.jpg";
