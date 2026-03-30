@@ -5,35 +5,31 @@ import { Link } from "react-router-dom";
 const Curriculum = () => {
   const weeks = [
     {
-      title: "Week 1: FigJam Foundations & The Play Zone",
-      goal: "Master the UI and basic tactile tools to reduce technical anxiety.",
-      concepts: ["Panning/Zooming", "The Toolbar", "Google SSO"],
-      activity: "The Play Zone: Marker, Stickies, and UI exploration.",
-      connection: "ALT: Encourages Self-Concept through autonomous exploration.",
+      title: "Week 1: Individual Exploration (Foundations)",
+      goal: "Focus: Mastering the \"Must-Know\" toolbar and canvas gestures.",
+      action: "Action: Enter the Play Zone. Use the Marker to sign your name and a Sticky Note to share your \"Teaching Superpower.\"",
+      objective: "Objective: Given a blank FigJam board, the educator will utilize the marker and sticky note tools to create a labeled introduction with 100% accuracy.",
       accent: "border-week-1"
     },
     {
-      title: "Week 2: Amplifying Student Voice",
-      goal: "Use interactive widgets to make thinking visible and capture real-time data.",
-      concepts: ["Stamps & Emotes", "Photo Booth", "Voice Memos"],
-      activity: "The Great Debate: Responding via Voice Memos and Voting.",
-      connection: "UDL: Multiple Means of Action and Expression.",
+      title: "Week 2: Small Group Collaboration (Student Voice)",
+      goal: "Focus: Using interactive widgets (Stamps, Emotes, and Voice Memos) for feedback.",
+      action: "Action: Join \"The Great Debate\" in the Experimental Zone. Vote with stamps and record a 30-second audio defense of your choice.",
+      objective: "Objective: Participants will implement at least two interactive widgets to facilitate peer feedback within the virtual workspace.",
       accent: "border-week-2"
     },
     {
-      title: "Week 3: Designing for Flow & Structure",
-      goal: "Move from a 'messy board' to an organized lesson using Sections and Connectors.",
-      concepts: ["Sections", "Connectors", "Spotlight Mode"],
-      activity: "Experimental Zone: Creating a 3-part lesson flow.",
-      connection: "ALT: Scaffolding complex design into manageable sections.",
+      title: "Week 3: Whole Class Structure (Lesson Flow)",
+      goal: "Focus: Organizing the infinite whiteboard using Sections and Connectors.",
+      action: "Action: Design a 3-part lesson skeleton (Hook, Activity, Exit Ticket) using Sections to \"chunk\" the information.",
+      objective: "Objective: Using sections and connectors, the educator will design a structured lesson flow that guides a student through a complete instructional cycle.",
       accent: "border-week-3"
     },
     {
-      title: "Week 4: Deployment & The Template Swap",
-      goal: "Successfully share files and build a reusable resource library.",
-      concepts: ["Permissions", "LMS Integration", "K-12 Community"],
-      activity: "Meet the Network: Template sharing on the Padlet.",
-      connection: "Social Presence: Sustaining community through resource sharing.",
+      title: "Week 4: Implementation & Deployment",
+      goal: "Focus: Sharing files with students and the @K12education template community.",
+      action: "Action: Post a link to a template you’ve created or modified on our community Padlet for final peer review.",
+      objective: "Objective: Educators will successfully export or share a collaborative file to a learning management system (Google Classroom/Canvas) for student use.",
       accent: "border-week-4"
     }
   ];
@@ -43,44 +39,14 @@ const Curriculum = () => {
       {/* Header */}
       <section className="py-16 bg-violet-600 text-white">
         <div className="container">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Network Curriculum</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-display">The Jam Think Spark Curriculum</h1>
           <p className="text-xl opacity-90 max-w-2xl">
-            A structured 4-week journey from FigJam beginner to classroom facilitator.
+            A research-based professional learning journey designed to spark visual collaboration in the K-12 classroom.
           </p>
         </div>
       </section>
 
-      {/* Learning Objectives */}
-      <section className="py-12 -mt-8">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-card p-6 rounded-2xl border-2 border-violet-100 shadow-sm">
-              <div className="flex gap-4">
-                <Target className="w-8 h-8 text-violet-600 shrink-0" />
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Objective 1: Structure</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Given a blank FigJam board, utilize the toolbar to create a visually organized lesson plan using sections and connectors.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-card p-6 rounded-2xl border-2 border-violet-100 shadow-sm">
-              <div className="flex gap-4">
-                <CheckCircle2 className="w-8 h-8 text-violet-600 shrink-0" />
-                <div>
-                  <h3 className="font-bold text-lg mb-2">Objective 2: Engagement</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Implement interactive widgets (voting, timers, and stamps) to facilitate real-time student engagement and feedback.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
+      {/* Timeline Navigation */}
       <section className="py-12">
         <div className="container max-w-4xl">
           <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
@@ -90,29 +56,24 @@ const Curriculum = () => {
                 <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-violet-600 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                   <Calendar className="w-5 h-5" />
                 </div>
+                
                 {/* Content Card */}
                 <div className={`w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-2xl border-l-4 bg-card shadow-sm hover:shadow-md transition-shadow ${week.accent}`}>
                   <h3 className="font-bold text-xl mb-2">{week.title}</h3>
-                  <p className="text-sm font-semibold text-violet-700 mb-3">{week.goal}</p>
-                  <div className="space-y-3">
-                    <div>
-                      <span className="text-[10px] uppercase font-bold text-muted-foreground tracking-widest">Key Concepts</span>
-                      <div className="flex flex-wrap gap-2 mt-1">
-                        {week.concepts.map(c => (
-                          <span key={c} className="px-2 py-0.5 bg-secondary text-secondary-foreground rounded text-xs">{c}</span>
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      <strong>Activity:</strong> {week.activity}
-                    </p>
-                    <p className="text-xs italic text-violet-600/80 bg-violet-50 p-2 rounded">
-                      {week.connection}
+                  <p className="text-sm font-semibold text-violet-700 mb-2">{week.goal}</p>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {week.action}
+                  </p>
+                  
+                  <div className="bg-violet-50 p-4 rounded-xl border border-violet-100">
+                    <p className="text-xs leading-relaxed text-violet-900">
+                      <strong>{week.objective.split(':')[0]}:</strong>{week.objective.split(':')[1]}
                     </p>
                   </div>
-                  <Button variant="ghost" size="sm" className="mt-4 w-full group" asChild>
-                    <Link to={`/week/${index + 1}`}>
-                      Go to Week {index + 1} <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+
+                  <Button variant="ghost" size="sm" className="mt-4 w-full group hover:bg-violet-100" asChild>
+                    <Link to={`/week-${index + 1}`}>
+                      View Week {index + 1} Resources <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
                 </div>
