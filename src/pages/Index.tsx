@@ -36,9 +36,14 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button variant="hero" size="lg" asChild>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVYVEbAXZddDqf6at3CLOqBghWTOCtB_jD7VFI7Ru3vK8sow/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">
-                  Register Here
-                </a>
+                <a 
+  href="https://docs.google.com/forms/d/e/1FAIpQLSeVYVEbAXZddDqf6at3CLOqBghWTOCtB_jD7VFI7Ru3vK8sow/viewform?usp=dialog" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  Register Here
+</a>
               </Button>
               <Button variant="outline" size="lg" className="border-hero-foreground/30 text-hero-foreground hover:bg-hero-foreground/10 font-display" asChild>
                 <a href="https://www.figma.com/signup" target="_blank" rel="noopener noreferrer">
