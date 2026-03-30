@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Users, Zap, Shield, ArrowRight, MessageSquare, Globe, Laptop, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -28,9 +30,9 @@ const Index = () => {
               <Button size="lg" className="rounded-full px-8 h-12 text-base" asChild>
                 <Link to="/week/1">Start Learning <ArrowRight className="ml-2 w-4 h-4" /></Link>
               </Button>
-              <Button size="lg" variant="outline" className="rounded-full px-8 h-12 text-base bg-white/50 backdrop-blur-sm">
-                View Curriculum
-              </Button>
+              <Button variant="outline" asChild className="rounded-full px-8 h-12 text-base">
+  <Link to="/curriculum">View Curriculum</Link>
+</Button>
             </div>
           </div>
         </div>
