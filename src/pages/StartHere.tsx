@@ -187,9 +187,15 @@ const Index = () => {
       <section className="py-16 bg-hero text-hero-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to Spark Engagement?</h2>
-          <Button size="lg" className="rounded-full px-12 h-14 text-lg bg-white text-primary hover:bg-white/90 shadow-xl" asChild>
-            <Link to="/week/1">Enter the Hub</Link>
-          </Button>
+         <Button size="lg" className="rounded-full px-12 h-14 text-lg bg-white text-primary hover:bg-white/90 shadow-xl" asChild>
+  <a 
+    href="https://padlet.com/aghoss/figjam-plc-community-hub-txqg7d1gdvisb56m" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Enter the Hub
+  </a>
+</Button>
         </div>
       </section>
     </div>
