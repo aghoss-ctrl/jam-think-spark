@@ -93,6 +93,37 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* PLN Framework Section */}
+      <section className="py-20 bg-card/50">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">The Framework of our PLN</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-4 p-6 bg-background rounded-xl border shadow-sm">
+              <div className="w-12 h-12 bg-sticky-yellow/20 rounded-full flex items-center justify-center text-2xl">🧠</div>
+              <h3 className="text-xl font-bold">Adult Learning Theory (ALT)</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                This PLN utilizes the <strong>Self-Concept</strong> principle. Adult learners benefit from having control over their learning process, so we provide autonomous "Sandbox" zones for self-paced exploration (Knowles, 1980).
+              </p>
+            </div>
+
+            <div className="space-y-4 p-6 bg-background rounded-xl border shadow-sm">
+              <div className="w-12 h-12 bg-sticky-green/20 rounded-full flex items-center justify-center text-2xl">🎨</div>
+              <h3 className="text-xl font-bold">Universal Design for Learning (UDL)</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                We provide <strong>Multiple Means of Representation</strong>. Information is provided through video tutorials, written guides, and interactive board examples to meet diverse learner needs (CAST, 2018).
+              </p>
+            </div>
+
+            <div className="space-y-4 p-6 bg-background rounded-xl border shadow-sm">
+              <div className="w-12 h-12 bg-sticky-blue/20 rounded-full flex items-center justify-center text-2xl">🤝</div>
+              <h3 className="text-xl font-bold">Participation Expectations</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                To get the most out of this network, participants are expected to engage with at least one peer post per week and complete the hands-on activity in the FigJam board.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Week Overview */}
       <section className="py-20">
