@@ -59,6 +59,38 @@ const Index = () => {
         </div>
       </section>
 
+      {/* PLN Framework Section */}
+      <section className="py-20 bg-card/50 border-y">
+        <div className="container">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">The Framework of our PLN</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-sticky-yellow/20 rounded-2xl flex items-center justify-center text-3xl">🧠</div>
+              <h3 className="text-xl font-bold text-foreground">Adult Learning Theory (ALT)</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                This PLN utilizes the <strong>Self-Concept</strong> principle. Adult learners benefit from having control over their learning process, so we provide autonomous "Sandbox" zones for self-paced exploration (Knowles, 1980).
+              </p>
+            </div>
+
+            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-sticky-green/20 rounded-2xl flex items-center justify-center text-3xl">🎨</div>
+              <h3 className="text-xl font-bold text-foreground">Universal Design for Learning (UDL)</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                We provide <strong>Multiple Means of Representation</strong>. Information is provided through video tutorials, written guides, and interactive board examples to meet diverse learner needs (CAST, 2018).
+              </p>
+            </div>
+
+            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-14 h-14 bg-sticky-blue/20 rounded-2xl flex items-center justify-center text-3xl">🤝</div>
+              <h3 className="text-xl font-bold text-foreground">Participation Expectations</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                To get the most out of this network, participants are expected to engage with at least one peer post per week and complete the hands-on activity in the FigJam board.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quick value props */}
       <section className="py-20 bg-card">
         <div className="container">
