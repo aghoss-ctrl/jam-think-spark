@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Users, Zap, Shield, ArrowRight, MessageSquare, Globe, Laptop, Heart } from "lucide-react";
 
-
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -26,21 +25,20 @@ const Index = () => {
               <span className="text-primary">with FigJam</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              A professional learning network for educators to master visual collaboration, 
-              streamline lesson design, and spark student engagement.
+              A professional learning network for educators to master visual collaboration, streamline lesson design, and spark student engagement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
               <div className="flex justify-center mt-8">
-  <Button size="lg" variant="outline" asChild className="rounded-full px-8 h-12 text-base bg-white/50 backdrop-blur-sm">
-    <Link to="/curriculum">View Curriculum</Link>
-  </Button>
-</div>
+                <Button size="lg" variant="outline" asChild className="rounded-full px-8 h-12 text-base bg-white/50 backdrop-blur-sm">
+                  <Link to="/curriculum">View Curriculum</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
-      </section>     
+      </section>
 
-     {/* Community Introduction Section */}
+      {/* Community Introduction Section */}
       <section className="py-12 bg-violet-50 border-b-4 border-violet-100">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-background rounded-3xl p-8 md:p-12 shadow-xl border-2 border-violet-200">
@@ -55,7 +53,6 @@ const Index = () => {
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   To help us grow as a professional learning community, please introduce yourself to the network! Use the Padlet below to share your name, your role, and one specific goal for visual collaboration.
                 </p>
-                
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="flex gap-3">
                     <span className="text-2xl">👥</span>
@@ -73,18 +70,9 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-
               <div className="flex-shrink-0 w-full md:w-auto">
-                <Button 
-                  asChild 
-                  className="w-full md:w-auto bg-violet-600 hover:bg-violet-700 text-white px-10 py-8 text-xl rounded-2xl shadow-lg hover:scale-105 transition-all group"
-                >
-                  <a 
-                    href="https://padlet.com/aghoss/figjam-plc-community-hub-txqg7d1gdvisb56m" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-1"
-                  >
+                <Button asChild className="w-full md:w-auto bg-violet-600 hover:bg-violet-700 text-white px-10 py-8 text-xl rounded-2xl shadow-lg hover:scale-105 transition-all group">
+                  <a href="https://padlet.com/aghoss/figjam-plc-community-hub-txqg7d1gdvisb56m" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1">
                     <span>Introduce Yourself</span>
                     <span className="text-xs font-normal opacity-80 group-hover:opacity-100">Open Padlet Community Hub</span>
                   </a>
@@ -94,34 +82,27 @@ const Index = () => {
           </div>
         </div>
       </section>
-{/* Navigation Guide Section */}
-      <div style={{ marginTop: "100px", marginBottom: "80px" }}>
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-lg border-2 border-violet-100 flex flex-col md:flex-row items-center gap-8">
 
-          </div>
-      </section>
-
-      {/* PASTE THE ZOOM/PAN GRID HERE (Around Line 100) */}
-      <div className="container">
+      {/* Navigation Guide & Zoom/Pan Grid */}
+      <div className="container" style={{ marginTop: "100px", marginBottom: "80px" }}>
+        {/* 1. The Zoom/Pan Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-yellow-50 p-8 rounded-2xl border-2 border-yellow-200">
             <h3 className="text-2xl font-bold text-yellow-900 mb-4">🔍 Zooming</h3>
-            <p className="text-yellow-800">
+            <p className="text-yellow-800 text-lg">
               Just like Google Maps! Pinch to zoom on your trackpad or use <strong>Cmd/Ctrl + Scroll</strong>.
             </p>
           </div>
           <div className="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
             <h3 className="text-2xl font-bold text-blue-900 mb-4">🖐️ Panning</h3>
-            <p className="text-blue-800">
+            <p className="text-blue-800 text-lg">
               Use two fingers to slide across the canvas and explore the different zones.
             </p>
           </div>
         </div>
-      </div>
 
-      {/* Navigation Guide Section follows... */}
-      <div style={{ marginTop: "100px", marginBottom: "80px" }}>
-          {/* Text Content */}
+        {/* 2. Detailed Navigation Guide Card */}
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-lg border-2 border-violet-100 flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 space-y-4">
             <h2 style={{ color: "purple", fontWeight: "bold", fontSize: "2.5em", lineHeight: "1.2" }}>
               Navigation Guide
@@ -144,54 +125,51 @@ const Index = () => {
               </li>
             </ul>
           </div>
-
-          {/* Graphic Side */}
           <div className="w-full md:w-72 h-72 bg-violet-50 rounded-2xl border-2 border-dashed border-violet-200 flex flex-col items-center justify-center text-center p-6">
             <div className="relative w-full h-full flex items-center justify-center">
-               {/* This represents your graphic placeholder */}
-               <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                  <Globe className="w-32 h-32 text-purple-600" />
-               </div>
-               <div className="relative z-10">
-                 <p className="text-sm font-bold text-violet-600 uppercase tracking-widest mb-2">Interactive View</p>
-                 <p className="text-xs text-violet-500 font-medium">Practice Zooming & Panning Here</p>
-               </div>
+              <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                <Globe className="w-32 h-32 text-purple-600" />
+              </div>
+              <div className="relative z-10">
+                <p className="text-sm font-bold text-violet-600 uppercase tracking-widest mb-2">Interactive View</p>
+                <p className="text-xs text-violet-500 font-medium">Practice Zooming & Panning Here</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* Proposed "Getting Started" Structure for Your Site */}
-      <div style={{ marginTop: "200px", marginBottom: "50px" }}>
-        <h1 style={{ color: "purple", fontWeight: "bold", fontSize: "3em" }}>
-          🚀 Getting Started with FigJam
-        </h1>
-        <p style={{ fontSize: "1.2em", color: "#555" }}>
-          Follow these three simple steps to prepare for your first week of FigJam PD.
-        </p>
-      </div>
 
-      <div style={{ marginBottom: "40px", borderLeft: "5px solid purple", paddingLeft: "20px" }}>
-        <h2 style={{ color: "purple", fontWeight: "bold" }}>1. Confirm Your Device</h2>
-        <p>Ensure you are using a <strong>Chromebook, Laptop, or Tablet</strong>. Remember, FigJam does not support mobile phones for these activities.</p>
-      </div>
-
-      <div style={{ marginBottom: "40px", borderLeft: "5px solid purple", paddingLeft: "20px" }}>
-        <h2 style={{ color: "purple", fontWeight: "bold" }}>2. Master the Canvas</h2>
-        <p>Practice the <strong>Pinch-to-Zoom</strong> and <strong>Two-Finger Pan</strong> mechanics. Think of it exactly like navigating <em>Google Maps</em>.</p>
-      </div>
-
-      <div style={{ marginBottom: "40px", borderLeft: "5px solid purple", paddingLeft: "20px" }}>
-        <h2 style={{ color: "purple", fontWeight: "bold" }}>3. Explore Week 1</h2>
-        <p>Click on the <strong>Week 1</strong> tab at the top of the page to begin your first module: <em>Foundations & Stickies</em>.</p>
-      </div>
+      {/* Getting Started Section */}
+      <section className="py-16">
+        <div className="container">
+          <div style={{ marginTop: "100px", marginBottom: "50px" }}>
+            <h1 style={{ color: "purple", fontWeight: "bold", fontSize: "3em" }}>
+              🚀 Getting Started with FigJam
+            </h1>
+            <p style={{ fontSize: "1.2em", color: "#555" }}>
+              Follow these three simple steps to prepare for your first week of FigJam PD.
+            </p>
+          </div>
+          <div style={{ marginBottom: "40px", borderLeft: "5px solid purple", paddingLeft: "20px" }}>
+            <h2 style={{ color: "purple", fontWeight: "bold" }}>1. Confirm Your Device</h2>
+            <p>Ensure you are using a <strong>Chromebook, Laptop, or Tablet</strong>. Remember, FigJam does not support mobile phones for these activities.</p>
+          </div>
+          <div style={{ marginBottom: "40px", borderLeft: "5px solid purple", paddingLeft: "20px" }}>
+            <h2 style={{ color: "purple", fontWeight: "bold" }}>2. Master the Canvas</h2>
+            <p>Practice the <strong>Pinch-to-Zoom</strong> and <strong>Two-Finger Pan</strong> mechanics. Think of it exactly like navigating <em>Google Maps</em>.</p>
+          </div>
+          <div style={{ marginBottom: "40px", borderLeft: "5px solid purple", paddingLeft: "20px" }}>
+            <h2 style={{ color: "purple", fontWeight: "bold" }}>3. Explore Week 1</h2>
+            <p>Click on the <strong>Week 1</strong> tab at the top of the page to begin your first module: <em>Foundations & Stickies</em>.</p>
+          </div>
+        </div>
+      </section>
 
       {/* PLN Framework Section */}
       <section className="py-20 bg-card/50 border-y">
         <div className="container">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-display">The Framework of our PLN</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            
-            {/* ALT Card */}
             <div className="flex flex-col bg-background rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img src={altImage} alt="Adult Learning Theory" className="w-full h-full object-cover" />
@@ -203,8 +181,6 @@ const Index = () => {
                 </p>
               </div>
             </div>
-
-            {/* UDL Card */}
             <div className="flex flex-col bg-background rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img src={udlImage} alt="Universal Design for Learning" className="w-full h-full object-cover" />
@@ -216,8 +192,6 @@ const Index = () => {
                 </p>
               </div>
             </div>
-
-            {/* Participation Card */}
             <div className="flex flex-col bg-background rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
               <div className="h-48 overflow-hidden">
                 <img src={participationImage} alt="Participation Expectations" className="w-full h-full object-cover" />
@@ -229,7 +203,6 @@ const Index = () => {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -240,8 +213,7 @@ const Index = () => {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Real Collaboration, Instant Engagement</h2>
             <p className="text-muted-foreground text-lg">
-              Move beyond static presentations. Create active, collaborative learning experiences 
-              where every student has a seat at the table.
+              Move beyond static presentations. Create active, collaborative learning experiences where every student has a seat at the table.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -264,7 +236,7 @@ const Index = () => {
         </div>
       </section>
 
-     {/* Week Navigation */}
+      {/* Week Navigation */}
       <section className="py-24 bg-secondary/30">
         <div className="container">
           <div className="mb-12">
@@ -278,11 +250,7 @@ const Index = () => {
               { num: 3, title: "Facilitation", desc: "Manage the digital classroom", color: "bg-week-3", path: "/week-3" },
               { num: 4, title: "Lesson Design", desc: "Build your first major board", color: "bg-week-4", path: "/week-4" },
             ].map((week) => (
-              <Link 
-                key={week.num} 
-                to={week.path}
-                className="group relative p-8 rounded-2xl bg-background border shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
-              >
+              <Link key={week.num} to={week.path} className="group relative p-8 rounded-2xl bg-background border shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
                 <div className={`absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 rounded-full opacity-10 transition-transform group-hover:scale-110 ${week.color}`}></div>
                 <span className="text-sm font-bold text-primary mb-2 block font-mono">Week {week.num}</span>
                 <h3 className="text-xl font-bold mb-2">{week.title}</h3>
@@ -292,19 +260,16 @@ const Index = () => {
           </div>
         </div>
       </section>
+
       {/* Quick Start CTA */}
       <section className="py-16 bg-hero text-hero-foreground">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to Spark Engagement?</h2>
-         <Button size="lg" className="rounded-full px-12 h-14 text-lg bg-white text-primary hover:bg-white/90 shadow-xl" asChild>
-  <a 
-    href="https://padlet.com/aghoss/figjam-plc-community-hub-txqg7d1gdvisb56m" 
-    target="_blank" 
-    rel="noopener noreferrer"
-  >
-    Enter the Hub
-  </a>
-</Button>
+          <Button size="lg" className="rounded-full px-12 h-14 text-lg bg-white text-primary hover:bg-white/90 shadow-xl" asChild>
+            <a href="https://padlet.com/aghoss/figjam-plc-community-hub-txqg7d1gdvisb56m" target="_blank" rel="noopener noreferrer">
+              Enter the Hub
+            </a>
+          </Button>
         </div>
       </section>
     </div>
