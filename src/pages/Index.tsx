@@ -1,3 +1,4 @@
+import anthonyPhoto from "../assets/anthony-guide.png";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, Users, Lightbulb, Palette } from "lucide-react";
@@ -140,10 +141,10 @@ const Index = () => {
             <div className="md:col-span-2">
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                 <img 
-                  src="/anthony-guide.png" 
-                  alt="Anthony Hossack - Technology Integration Coach" 
-                  className="w-40 h-40 rounded-full shadow-lg object-cover border-4 border-violet-100 shrink-0"
-                />
+  src={anthonyPhoto} 
+  alt="Anthony Hossack - Technology Integration Coach" 
+  className="w-40 h-40 rounded-full shadow-lg object-cover border-4 border-violet-100 shrink-0"
+/>
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold text-foreground">Meet Me — Your Guide</h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
