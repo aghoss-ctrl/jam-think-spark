@@ -97,7 +97,30 @@ const Index = () => {
 {/* Navigation Guide Section */}
       <div style={{ marginTop: "100px", marginBottom: "80px" }}>
         <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-lg border-2 border-violet-100 flex flex-col md:flex-row items-center gap-8">
-          
+
+          </div>
+      </section>
+
+      {/* PASTE THE ZOOM/PAN GRID HERE (Around Line 100) */}
+      <div className="container">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-yellow-50 p-8 rounded-2xl border-2 border-yellow-200">
+            <h3 className="text-2xl font-bold text-yellow-900 mb-4">🔍 Zooming</h3>
+            <p className="text-yellow-800">
+              Just like Google Maps! Pinch to zoom on your trackpad or use <strong>Cmd/Ctrl + Scroll</strong>.
+            </p>
+          </div>
+          <div className="bg-blue-50 p-8 rounded-2xl border-2 border-blue-200">
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">🖐️ Panning</h3>
+            <p className="text-blue-800">
+              Use two fingers to slide across the canvas and explore the different zones.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation Guide Section follows... */}
+      <div style={{ marginTop: "100px", marginBottom: "80px" }}>
           {/* Text Content */}
           <div className="flex-1 space-y-4">
             <h2 style={{ color: "purple", fontWeight: "bold", fontSize: "2.5em", lineHeight: "1.2" }}>
