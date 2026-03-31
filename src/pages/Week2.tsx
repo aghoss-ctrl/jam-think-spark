@@ -61,7 +61,7 @@ const Week2 = () => {
         </div>
       </ContentSection>
 
-      {/* Must Know Tools Practice Section - Purple Branding */}
+      {/* Voice Practice Section - Purple Branding */}
       <ContentSection title="Must Know Tools">
         <div className="bg-violet-50 border-2 border-violet-200 rounded-xl p-8 shadow-sm">
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -86,7 +86,7 @@ const Week2 = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  Practice the Must Know Tools
+                  Practice Student Voice Tools
                 </a>
               </Button>
             </div>
