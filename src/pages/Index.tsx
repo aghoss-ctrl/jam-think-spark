@@ -1,5 +1,7 @@
-import altImage from "../assets/alt.jpeg";
-import participationImage from "../assets/participation.jpeg";
+import altImage from "../assets/alt.jpg";
+import udlImage from "../assets/udl.jpg";
+import participationImage from "../assets/participation.jpg";
+import anthonyPhoto from "../assets/anthony-guide.png";
 import udlImage from "../assets/anthony-guide.png"; // Using this for UDL as requested
 import anthonyPhoto from "../assets/anthony-guide.png";
 import { Link } from "react-router-dom";
