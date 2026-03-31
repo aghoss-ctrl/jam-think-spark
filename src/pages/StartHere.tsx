@@ -94,7 +94,49 @@ const Index = () => {
           </div>
         </div>
       </section>
+{/* Navigation Guide Section */}
+      <div style={{ marginTop: "100px", marginBottom: "80px" }}>
+        <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-lg border-2 border-violet-100 flex flex-col md:flex-row items-center gap-8">
+          
+          {/* Text Content */}
+          <div className="flex-1 space-y-4">
+            <h2 style={{ color: "purple", fontWeight: "bold", fontSize: "2.5em", lineHeight: "1.2" }}>
+              Navigation Guide
+            </h2>
+            <p className="text-xl text-violet-800 font-medium">
+              FigJam navigation works just like <strong>Google Maps</strong>:
+            </p>
+            <ul className="space-y-4 text-lg text-muted-foreground">
+              <li className="flex items-center gap-3">
+                <span className="text-2xl">🤏</span>
+                <span><strong>Pinch</strong> to zoom in and out on trackpad or touchscreen</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-2xl">🖐️</span>
+                <span><strong>Two-finger swipe</strong> to pan around the canvas</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-2xl">🖱️</span>
+                <span>Use <strong>scroll wheel + Ctrl/Cmd</strong> to zoom with a mouse</span>
+              </li>
+            </ul>
+          </div>
 
+          {/* Graphic Side */}
+          <div className="w-full md:w-72 h-72 bg-violet-50 rounded-2xl border-2 border-dashed border-violet-200 flex flex-col items-center justify-center text-center p-6">
+            <div className="relative w-full h-full flex items-center justify-center">
+               {/* This represents your graphic placeholder */}
+               <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                  <Globe className="w-32 h-32 text-purple-600" />
+               </div>
+               <div className="relative z-10">
+                 <p className="text-sm font-bold text-violet-600 uppercase tracking-widest mb-2">Interactive View</p>
+                 <p className="text-xs text-violet-500 font-medium">Practice Zooming & Panning Here</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Proposed "Getting Started" Structure for Your Site */}
       <div style={{ marginTop: "200px", marginBottom: "50px" }}>
         <h1 style={{ color: "purple", fontWeight: "bold", fontSize: "3em" }}>
