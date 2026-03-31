@@ -39,7 +39,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section>     
 
       {/* Community Introduction Section */}
       <section className="py-12 bg-violet-50 border-b-4 border-violet-100">
@@ -95,6 +95,31 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/*Proposed "Getting Started" Structure for Your Site */}
+
+      <div style="margin-top: 200px; margin-bottom: 50px;">
+    <h1 style="color: purple; font-weight: bold; font-size: 3em;">
+        🚀 Getting Started with FigJam
+    </h1>
+    <p style="font-size: 1.2em; color: #555;">
+        Follow these three simple steps to prepare for your first week of FigJam PD.
+    </p>
+</div>
+
+<div style="margin-bottom: 40px; border-left: 5px solid purple; padding-left: 20px;">
+    <h2 style="color: purple; font-weight: bold;">1. Confirm Your Device</h2>
+    <p>Ensure you are using a <strong>Chromebook, Laptop, or Tablet</strong>. Remember, FigJam does not support mobile phones for these activities.</p>
+</div>
+
+<div style="margin-bottom: 40px; border-left: 5px solid purple; padding-left: 20px;">
+    <h2 style="color: purple; font-weight: bold;">2. Master the Canvas</h2>
+    <p>Practice the <strong>Pinch-to-Zoom</strong> and <strong>Two-Finger Pan</strong> mechanics. Think of it exactly like navigating <em>Google Maps</em>.</p>
+</div>
+
+<div style="margin-bottom: 40px; border-left: 5px solid purple; padding-left: 20px;">
+    <h2 style="color: purple; font-weight: bold;">3. Explore Week 1</h2>
+    <p>Click on the <strong>Week 1</strong> tab at the top of the page to begin your first module: <em>Foundations & Stickies</em>.</p>
+</div>
 
       {/* PLN Framework Section */}
       <section className="py-20 bg-card/50 border-y">
