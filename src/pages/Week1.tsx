@@ -90,7 +90,7 @@ const Week1 = () => {
             <strong>@K12education</strong> community.
           </p>
           <Button variant="week" asChild>
-            <a href="https://www.figma.com/community/tag/k12education/files" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.figma.com/community/search?query=graphic%20organizers&resource_type=files&editor_type=all&price=all&sort_by=relevancy&creators=all" target="_blank" rel="noopener noreferrer">
               Browse Templates <ExternalLink className="ml-2 w-4 h-4" />
             </a>
           </Button>
