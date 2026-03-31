@@ -156,11 +156,11 @@ const StartHere = () => {
         </ContentSection>
 
         {/* Guide Bio */}
-        <ContentSection title="Your Guide" icon={<User className="w-5 h-5" />}>
+        <ContentSection title="Rest Assured" icon={<User className="w-5 h-5" />}>
           <div className="bg-card rounded-xl p-8 shadow-sm border">
             <div className="max-w-2xl">
               <p className="text-lg leading-relaxed mb-6">
-                Welcome! I believe in a <strong className="marker-underline">phased approach</strong> to learning
+                I believe in a <strong className="marker-underline">phased approach</strong> to learning
                 new tools — we'll start small with the basics and gradually work our way up to full
                 whole-class collaboration by Week 4.
               </p>
