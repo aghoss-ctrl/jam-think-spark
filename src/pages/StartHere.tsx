@@ -5,8 +5,7 @@ import anthonyPhoto from "../assets/anthony-guide.png";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Users, Zap, Shield, ArrowRight, MessageSquare, Globe, Laptop, Heart } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+
 
 const Index = () => {
   return (
