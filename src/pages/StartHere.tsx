@@ -175,27 +175,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Week Navigation */}
+     {/* Week Navigation */}
       <section className="py-24 bg-secondary/30">
         <div className="container">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-4">Your 4-Week Journey</h2>
+            <h2 className="text-3xl font-bold mb-4 font-display">Your 4-Week Journey</h2>
             <p className="text-muted-foreground">Master FigJam step-by-step through our structured curriculum.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { num: 1, title: "Foundations", desc: "Master the basic toolset", color: "bg-week-1" },
-              { num: 2, title: "Student Voice", desc: "Capture real-time feedback", color: "bg-week-2" },
-              { num: 3, title: "Facilitation", desc: "Manage the digital classroom", color: "bg-week-3" },
-              { num: 4, title: "Lesson Design", desc: "Build your first major board", color: "bg-week-4" },
+              { num: 1, title: "Foundations", desc: "Master the basic toolset", color: "bg-week-1", path: "/week-1" },
+              { num: 2, title: "Student Voice", desc: "Capture real-time feedback", color: "bg-week-2", path: "/week-2" },
+              { num: 3, title: "Facilitation", desc: "Manage the digital classroom", color: "bg-week-3", path: "/week-3" },
+              { num: 4, title: "Lesson Design", desc: "Build your first major board", color: "bg-week-4", path: "/week-4" },
             ].map((week) => (
               <Link 
                 key={week.num} 
-                to={`/week/${week.num}`}
+                to={week.path}
                 className="group relative p-8 rounded-2xl bg-background border shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
               >
                 <div className={`absolute top-0 right-0 w-32 h-32 -mr-8 -mt-8 rounded-full opacity-10 transition-transform group-hover:scale-110 ${week.color}`}></div>
-                <span className="text-sm font-bold text-primary mb-2 block">Week {week.num}</span>
+                <span className="text-sm font-bold text-primary mb-2 block font-mono">Week {week.num}</span>
                 <h3 className="text-xl font-bold mb-2">{week.title}</h3>
                 <p className="text-sm text-muted-foreground">{week.desc}</p>
               </Link>
@@ -203,7 +203,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Quick Start CTA */}
       <section className="py-16 bg-hero text-hero-foreground">
         <div className="container text-center">
