@@ -119,46 +119,6 @@ const Index = () => {
         <h2 style={{ color: "purple", fontWeight: "bold" }}>3. Explore Week 1</h2>
         <p>Click on the <strong>Week 1</strong> tab at the top of the page to begin your first module: <em>Foundations & Stickies</em>.</p>
       </div>
-      {/* Navigation Guide Section */}
-      <div style={{ marginTop: "200px", marginBottom: "80px" }}>
-        <div className="max-w-4xl mx-auto bg-white rounded-3xl p-8 shadow-lg border-2 border-violet-100 flex flex-col md:flex-row items-center gap-8">
-          
-          {/* Text Content */}
-          <div className="flex-1 space-y-4">
-            <h2 style={{ color: "purple", fontWeight: "bold", fontSize: "2.5em", lineHeight: "1.2" }}>
-              Navigation Guide
-            </h2>
-            <p className="text-xl text-violet-800 font-medium">
-              FigJam navigation works just like <strong>Google Maps</strong>:
-            </p>
-            <ul className="space-y-3 text-lg text-muted-foreground">
-              <li className="flex items-start gap-2">
-                <span className="text-violet-600">📍</span>
-                <span><strong>Pinch</strong> to zoom in and out on trackpad or touchscreen</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-violet-600">📍</span>
-                <span><strong>Two-finger swipe</strong> to pan around the canvas</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="text-violet-600">📍</span>
-                <span>Use <strong>scroll wheel + Ctrl/Cmd</strong> to zoom with a mouse</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Graphic Placeholder */}
-          <div className="w-full md:w-64 h-64 bg-violet-50 rounded-2xl border-2 border-dashed border-violet-200 flex flex-col items-center justify-center text-center p-6">
-            <div className="text-5xl mb-2">🖐️</div>
-            <p className="text-sm font-bold text-violet-400 uppercase tracking-widest">
-              Interactive View
-            </p>
-            <p className="text-xs text-violet-300 mt-2">
-              [Image: Hands performing pinch and pan gestures over a map]
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* PLN Framework Section */}
       <section className="py-20 bg-card/50 border-y">
