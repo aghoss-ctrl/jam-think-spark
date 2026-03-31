@@ -1,3 +1,6 @@
+import altImage from "../assets/alt.jpeg";
+import participationImage from "../assets/participation.jpeg";
+import udlImage from "../assets/anthony-guide.png"; // Using this for UDL as requested
 import anthonyPhoto from "../assets/anthony-guide.png";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -68,35 +71,51 @@ const Index = () => {
       {/* PLN Framework Section */}
       <section className="py-20 bg-card/50 border-y">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">The Framework of our PLN</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-display">The Framework of our PLN</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-14 h-14 bg-sticky-yellow/20 rounded-2xl flex items-center justify-center text-3xl">🧠</div>
-              <h3 className="text-xl font-bold text-foreground">Adult Learning Theory (ALT)</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                This PLN utilizes the <strong>Self-Concept</strong> principle. Adult learners benefit from having control over their learning process, so we provide autonomous "Sandbox" zones for self-paced exploration (Knowles, 1980).
-              </p>
+            
+            {/* ALT Card */}
+            <div className="flex flex-col bg-background rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src={altImage} alt="Adult Learning Theory" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 space-y-3">
+                <h3 className="text-xl font-bold text-foreground">Adult Learning Theory (ALT)</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  This PLN utilizes the <strong>Self-Concept</strong> principle. Adult learners benefit from having control over their learning process, so we provide autonomous "Sandbox" zones (Knowles, 1980).
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-14 h-14 bg-sticky-green/20 rounded-2xl flex items-center justify-center text-3xl">🎨</div>
-              <h3 className="text-xl font-bold text-foreground">Universal Design for Learning (UDL)</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                We provide <strong>Multiple Means of Representation</strong>. Information is provided through video tutorials, written guides, and interactive board examples to meet diverse learner needs (CAST, 2018).
-              </p>
+            {/* UDL Card */}
+            <div className="flex flex-col bg-background rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src={udlImage} alt="Universal Design for Learning" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 space-y-3">
+                <h3 className="text-xl font-bold text-foreground">Universal Design for Learning (UDL)</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  We provide <strong>Multiple Means of Representation</strong>. Information is provided through video tutorials, written guides, and interactive board examples (CAST, 2018).
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4 p-8 bg-background rounded-2xl border shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-14 h-14 bg-sticky-blue/20 rounded-2xl flex items-center justify-center text-3xl">🤝</div>
-              <h3 className="text-xl font-bold text-foreground">Participation Expectations</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                To get the most out of this network, participants are expected to engage with at least one peer post per week and complete the hands-on activity in the FigJam board.
-              </p>
+            {/* Participation Card */}
+            <div className="flex flex-col bg-background rounded-2xl border shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <div className="h-48 overflow-hidden">
+                <img src={participationImage} alt="Participation Expectations" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6 space-y-3">
+                <h3 className="text-xl font-bold text-foreground">Participation Expectations</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  To get the most out of this network, participants are expected to engage with at least one peer post per week and complete the hands-on activity.
+                </p>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
-
       {/* Quick value props */}
       <section className="py-20 bg-card">
         <div className="container">
