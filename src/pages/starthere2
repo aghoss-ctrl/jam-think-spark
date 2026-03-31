@@ -1,0 +1,79 @@
+import { motion } from "framer-motion";
+import { Monitor, User, Layers } from "lucide-react";
+import ContentCard from "@/components/ContentCard";
+import NavigationGuide from "@/components/NavigationGuide";
+
+export default function StartHerePage() {
+  return (
+    <div className="min-h-screen pb-20">
+      {/* Hero Section with your 200px offset style */}
+      <section className="py-20" style={{ marginTop: "100px" }}>
+        <div className="container">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <span className="mb-2 inline-block rounded-full bg-purple-100 px-4 py-1 text-sm font-bold text-purple-600 uppercase tracking-wider">
+              Start Here
+            </span>
+            <h1 className="mb-4 text-5xl font-extrabold text-purple-900 md:text-6xl">
+              The Navigator
+            </h1>
+            <p className="max-w-2xl text-xl text-muted-foreground">
+              Everything you need to know before diving into your FigJam journey.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="grid gap-8 md:grid-cols-2"
+        >
+          {/* Your requested Navigation Guide */}
+          <NavigationGuide />
+
+          {/* Tech Requirements Card */}
+          <ContentCard icon={<Monitor size={24} />} title="Tech Requirements">
+            <ul className="list-inside list-disc space-y-2 text-lg">
+              <li><strong>Chromebooks</strong> — fully supported ✅</li>
+              <li><strong>Laptops</strong> — fully supported ✅</li>
+              <li><strong>iPads</strong> — supported via browser ✅</li>
+              <li><strong className="text-red-500">Mobile phones</strong> — not supported ❌</li>
+            </ul>
+          </ContentCard>
+
+          {/* Your Guide Section */}
+          <ContentCard icon={<User size={24} />} title="Your Guide" className="md:col-span-2">
+            <div className="space-y-4 text-lg">
+                <p>
+                  Hi! I'm your facilitator for this 4-week professional development journey. My philosophy is a <strong>phased approach</strong>—we start small with core tools and build confidence before scaling up to whole-class collaboration.
+                </p>
+                <p>
+                  Each week layers on new skills so you never feel overwhelmed. By Week 4, you'll have a full toolkit of FigJam strategies ready for your classroom.
+                </p>
+            </div>
+          </ContentCard>
+
+          {/* Weekly Phases Grid */}
+          <ContentCard icon={<Layers size={24} />} title="The Phased Approach" className="md:col-span-2">
+            <div className="grid gap-4 sm:grid-cols-4 pt-4">
+              {[
+                { week: "Week 1", label: "Foundations", desc: "Core tools & first canvas" },
+                { week: "Week 2", label: "Student Voice", desc: "Feedback, stamps & widgets" },
+                { week: "Week 3", label: "Structure", desc: "Sections, connectors & management" },
+                { week: "Week 4", label: "Celebrate", desc: "Share, reflect & exchange" },
+              ].map((phase) => (
+                <div key={phase.week} className="rounded-2xl bg-violet-50 p-5 text-center border border-violet-100 hover:scale-105 transition-transform">
+                  <span className="mb-1 block text-xs font-bold text-purple-600 uppercase">{phase.week}</span>
+                  <span className="mb-2 block font-bold text-purple-900 text-lg">{phase.label}</span>
+                  <span className="text-sm text-muted-foreground">{phase.desc}</span>
+                </div>
+              ))}
+            </div>
+          </ContentCard>
+        </motion.div>
+      </section>
+    </div>
+  );
+}
