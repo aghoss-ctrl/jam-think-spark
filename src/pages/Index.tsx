@@ -131,7 +131,57 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+      {/* Meet the Guide & Expectations Section */}
+      <section className="py-20 bg-white">
+        <div className="container max-w-5xl">
+          <div className="grid md:grid-cols-3 gap-12 items-start">
+            
+            {/* Bio Column */}
+            <div className="md:col-span-2">
+              <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                <img 
+                  src="/anthony-guide.png" 
+                  alt="Anthony Hossack - Technology Integration Coach" 
+                  className="w-40 h-40 rounded-full shadow-lg object-cover border-4 border-violet-100 shrink-0"
+                />
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold text-foreground">Meet Me — Your Guide</h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Hi, amazing educators! I am <strong className="text-foreground">Anthony Hossack</strong>. I am so excited to share a visual collaboration tool with you that is truly engaging to students. The tool also allows students to be creative, express themselves, and visualize their thinking.
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    My background is in computer science and coaching educators on technology integration with over 12 years of experience. I created <strong className="text-violet-600">Jam Think Spark</strong> to bridge the gap between "having a tool" and "using it effectively" without the usual tech-induced headache.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Expectations Column */}
+            <div className="bg-blue-50 p-8 rounded-3xl border-l-8 border-blue-500 shadow-sm">
+              <h3 className="text-xl font-bold text-blue-900 mb-4 flex items-center gap-2">
+                <span className="text-2xl">✨</span> Expectations
+              </h3>
+              <p className="text-sm text-blue-800 mb-6 font-medium">
+                In order for us to be a network that sparks, I ask for two things:
+              </p>
+              <ul className="space-y-4">
+                <li className="flex gap-3 text-sm text-blue-900">
+                  <div className="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center shrink-0 font-bold">1</div>
+                  <span><strong>Weekly Check-in:</strong> Jump into the "Play Zone" once a week to try out a new strategy.</span>
+                </li>
+                <li className="flex gap-3 text-sm text-blue-900">
+                  <div className="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center shrink-0 font-bold">2</div>
+                  <span><strong>Peer Connection:</strong> Leave a "heart" or quick comment on a colleague's Padlet post.</span>
+                </li>
+              </ul>
+              <p className="mt-6 text-xs italic text-blue-700 leading-relaxed">
+                A PLN only works if we’re actually networking—your voice makes this space valuable!
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       {/* Week Overview */}
       <section className="py-20">
