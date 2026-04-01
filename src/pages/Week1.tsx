@@ -78,13 +78,13 @@ const Week1 = () => {
           </p>
          <div className="mt-4">
   <video 
-    controls 
-    className="w-full rounded-lg border shadow-sm"
-    poster="/video-thumbnail.jpg" // Optional: add an image to show before play
-  >
-    <source src="/mustknowtools.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  controls 
+  preload="metadata"
+  className="w-full rounded-lg border shadow-sm"
+>
+  <source src="/mustknowtools.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 </div>
         </div>
       </ContentSection>
