@@ -31,14 +31,7 @@ const Week1 = () => {
           ))}
         </div>
       </ContentSection>
-<div className="flex justify-center my-8">
-  <a href="/mustknowtools.mp4" target="_blank" rel="noopener noreferrer">
-    <Button className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full shadow-lg transition-all">
-      <Play className="w-5 h-5 fill-current" />
-      Watch the Must-Know Tools Video
-    </Button>
-  </a>
-</div>
+
       
 
       {/* Must Know Tools Practice Section - Purple Branding */}
@@ -84,7 +77,7 @@ const Week1 = () => {
             A walkthrough video covering all the foundation tools and how to set up your first FigJam lesson.
           </p>
           <Button variant="outline" asChild>
-            <a href="https://www.youtube.com/results?search_query=designing+first+lesson+figjam" target="_blank" rel="noopener noreferrer">
+            <a href="/mustknowtools.mp4" target="_blank" rel="noopener noreferrer">
               Watch Video <ExternalLink className="ml-2 w-4 h-4" />
             </a>
           </Button>
