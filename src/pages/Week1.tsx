@@ -76,11 +76,16 @@ const Week1 = () => {
           <p className="text-muted-foreground mb-4">
             A walkthrough video covering all the foundation tools and how to set up your first FigJam lesson.
           </p>
-          <Button variant="outline" asChild>
-            <a href="/mustknowtools.mp4" target="_blank" rel="noopener noreferrer">
-              Watch Video <ExternalLink className="ml-2 w-4 h-4" />
-            </a>
-          </Button>
+         <div className="mt-4">
+  <video 
+    controls 
+    className="w-full rounded-lg border shadow-sm"
+    poster="/video-thumbnail.jpg" // Optional: add an image to show before play
+  >
+    <source src="/mustknowtools.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
         </div>
       </ContentSection>
 
