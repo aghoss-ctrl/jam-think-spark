@@ -72,7 +72,7 @@ const StartHere = () => {
               </div>
               <div className="flex-shrink-0 w-full md:w-auto">
                 <Button asChild className="w-full md:w-auto bg-violet-600 hover:bg-violet-700 text-white px-10 py-8 text-xl rounded-2xl shadow-lg hover:scale-105 transition-all group">
-                  <a href="https://padlet.com/aghoss/figjam-plc-community-hub-txqg7d1gdvisb56m" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1">
+                  <a href="https://www.figma.com/board/XgoaQ1tFzzJ8QENNXD0gkh/FigJam-PLN-Communications-Hub?node-id=1-12&t=9mumENq73CoMOcz3-4" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1">
                     <span>Introduce Yourself</span>
                     <span className="text-xs font-normal opacity-80 group-hover:opacity-100">Open Padlet Community Hub</span>
                   </a>
